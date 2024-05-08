@@ -31,7 +31,7 @@ max_line_length = 200
 
 # Xml project files
 [*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
-indent_size = 2
+indent_size = 4
 
 # Xml config files
 [*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
@@ -172,6 +172,12 @@ csharp_space_between_square_brackets = false
 # Wrapping
 csharp_preserve_single_line_statements = false
 csharp_preserve_single_line_blocks = true
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_namespace_declarations = block_scoped:silent
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_top_level_statements = true:silent
+csharp_style_prefer_primary_constructors = true:suggestion
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Naming conventions
@@ -185,9 +191,9 @@ csharp_preserve_single_line_blocks = true
 
 # Naming rules
 
-dotnet_naming_rule.interface_must_start_with_I.severity = warning
+dotnet_naming_rule.interface_must_start_with_i.severity = warning
 dotnet_naming_rule.interface_must_start_with_I.symbols = interface_types
-dotnet_naming_rule.interface_must_start_with_I.style = I_style
+dotnet_naming_rule.interface_must_start_with_i.style = I_style
 
 dotnet_naming_rule.variables_must_be_camel_style.severity = warning
 dotnet_naming_rule.variables_must_be_camel_style.symbols = parameter_types
@@ -458,3 +464,5 @@ dotnet_diagnostic.SA1652.severity = none
 dotnet_diagnostic.SX1101.severity = none
 dotnet_diagnostic.SX1309.severity = none
 dotnet_diagnostic.SX1309S.severity = none
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
